@@ -28,6 +28,11 @@ public class GameArea extends JPanel {
 
         blocks = new TetrisBlock[] { new IShape(),
                 new JShape(),
+                new LShape(),
+                new OShape(),
+                new SShape(),
+                new TShape(),
+                new ZShape()
         };
     }
 

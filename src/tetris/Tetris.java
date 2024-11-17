@@ -17,6 +17,8 @@ public class Tetris {
 
     public static void gameOver(int score) {
         gf.setVisible(false);
+        JOptionPane.showMessageDialog(null, "game over", null, 0);
+        sf.setVisible(true);
 
     }
 

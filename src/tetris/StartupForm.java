@@ -1,7 +1,7 @@
 package tetris;
 
-public class StartupForm extends javax.swing.JFrame {
-
+public class StartupForm extends javax.swing.JFrame { //setVisible oluşturduğum pencerenin görünür veya görünmez olmasını sağlıyor 
+                                                      // pencere olusm-turmamsızı sağlıo JFramw 
     public StartupForm() {
         initComponents();
     }

@@ -39,10 +39,10 @@ public class TetrisBlock {
     }
 
     public void spawn(int gridWidth) {
-        Random r = new Random();
+        Random r = new Random(); //rastgele sekil
 
-        currentRotation = r.nextInt(shapes.length);
-        shape = shapes[currentRotation];
+        currentRotation = r.nextInt(shapes.length); //rastgele seklin rotasyonunu belirliyo bunu da rasgtele atio 
+        shape = shapes[currentRotation]; 
 
         y = -getHeight();
         x = r.nextInt(gridWidth - getWidth());
@@ -95,7 +95,16 @@ public class TetrisBlock {
     }
 
     public void rotate() {
-        throw new UnsupportedOperationException("This will implemented by students");
+
+        if(currentRotation==3){
+
+            currentRotation=-1;
+
+        }
+
+        shape = shapes[++currentRotation]; 
+        
+
     }
 
     public int getBottomEdge() {
