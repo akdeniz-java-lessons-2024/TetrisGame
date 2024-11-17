@@ -17,8 +17,12 @@ public class Tetris {
 
     public static void gameOver(int score) {
         gf.setVisible(false);
-
-    }
+        JOptionPane.showMessageDialog(null, 
+                                      "The game ended Your score is " + score, 
+                                      "Game Over", 
+                                      JOptionPane.WARNING_MESSAGE);
+	System.exit(0);
+   }
 
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(new Runnable() {

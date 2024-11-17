@@ -27,7 +27,8 @@ public class GameArea extends JPanel {
         gridRows = this.getBounds().height / gridCellSize;
 
         blocks = new TetrisBlock[] { new IShape(),
-                new JShape(),
+                new JShape(), new ZShape(), 
+	        new SShape() ,new OShape()
         };
     }
 
