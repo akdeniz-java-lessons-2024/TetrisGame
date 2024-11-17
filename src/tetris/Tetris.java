@@ -21,7 +21,8 @@ public class Tetris {
                                       "The game ended Your score is " + score, 
                                       "Game Over", 
                                       JOptionPane.WARNING_MESSAGE);
-	System.exit(0);
+
+        sf.setVisible(true);
    }
 
     public static void main(String[] args) {
