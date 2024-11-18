@@ -2,10 +2,16 @@ package tetrisblocks;
 
 import tetris.TetrisBlock;
 
-public class OShape extends TetrisBlock {
-    public OShape() {
-        // TODO: Add OShape Here
-        super(new int[][] {
+public class JShape extends TetrisBlock {
+    public JShape() {
+        super(new int[][] { { 0, 1 },
+                {1, 1},
+                {1, 1}
         });
+    }
+}
+@Override
+    public void spawn(int gridWidth) {
+    super.spawn(gridWidth);
     }
 }
