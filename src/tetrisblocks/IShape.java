@@ -3,8 +3,7 @@ package tetrisblocks;
 import tetris.TetrisBlock;
 
 public class IShape extends TetrisBlock {
-    public IShape() {
-        // TODO: Add IShape Here
+    public IShape() { 
         super(new int[][] { { 1, 1, 1, 1 } });
     }
 
