@@ -95,8 +95,8 @@ public class TetrisBlock {
     }
 
     public void rotate() {
-       currentRotation = (currentRotation + 1) % shapes.length;
-        shape = shapes[currentRotation];
+    currentRotation = (currentRotation + 1) % shapes.length; 
+    shape = shapes[currentRotation]
     }
 
     public int getBottomEdge() {
