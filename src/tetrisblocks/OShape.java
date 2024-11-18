@@ -11,7 +11,7 @@ public class JShape extends TetrisBlock {
     }
 }
 @Override
-    public void rotate {
-    super.rotate;
+    public void rotate() {
+    super.rotate();
     }
 }
