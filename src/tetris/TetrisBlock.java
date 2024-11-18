@@ -10,7 +10,7 @@ public class TetrisBlock {
     private int[][][] shapes;
     private int currentRotation;
 
-    private Color[] availableColors = { Color.GREEN, Color.RED, Color.BLUE };
+    private Color[] availableColors = { Color.GREEN, Color.RED, Color.BLUE, Color.YELLOW, Color.PINK, Color.ORANGE};
 
     public TetrisBlock(int[][] shape) {
         this.shape = shape;
@@ -95,7 +95,8 @@ public class TetrisBlock {
     }
 
     public void rotate() {
-        throw new UnsupportedOperationException("This will implemented by students");
+    currentRotation = (currentRotation + 1) % shapes.length;
+    shape = shapes[currentRotation];   
     }
 
     public int getBottomEdge() {

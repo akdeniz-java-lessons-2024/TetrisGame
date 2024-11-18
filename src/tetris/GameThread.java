@@ -54,4 +54,8 @@ public class GameThread extends Thread {
             }
         }
     }
+
+    void setPause(int speed) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
