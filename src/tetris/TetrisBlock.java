@@ -95,7 +95,8 @@ public class TetrisBlock {
     }
 
     public void rotate() {
-        throw new UnsupportedOperationException("This will implemented by students");
+        currentRotation = (currentRotation+1) % shapes.length;
+        shape = shapes[currentRotation];
     }
 
     public int getBottomEdge() {
