@@ -4,8 +4,25 @@ import tetris.TetrisBlock;
 
 public class OShape extends TetrisBlock {
     public OShape() {
-        // TODO: Add OShape Here
+        
         super(new int[][] {
+            {1 , 1},
+            {1 , 1}
         });
+    }
+    @Override
+    public void rotate()
+    {
+        super.rotate();
+        if(getWidth() == 1)
+        {
+            this.setX(this.getX() + 1);
+            this.setY(this.getY() - 1);
+        }
+        else
+        {
+            this.setX(this.getX() - 1);
+            this.setY(this.getY() + 1);
+        }
     }
 }

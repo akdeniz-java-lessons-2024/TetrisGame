@@ -4,8 +4,25 @@ import tetris.TetrisBlock;
 
 public class SShape extends TetrisBlock {
     public SShape() {
-        // TODO: Add SShape Here
+        
         super(new int[][] {
+            {0 , 1 , 1},
+            {1 , 1 , 0}
         });
+    }
+    @Override
+    public void rotate()
+    {    super.rotate();
+        if(this.getWidth() == 2)
+        {
+            this.setX(this.getX() + 1);
+            this.setY(this.getY() - 1);
+        }
+        else
+        {
+            this.setX(this.getX() - 1);
+            this.setY(this.getY() + 1);
+        }
+        super.rotate();
     }
 }
