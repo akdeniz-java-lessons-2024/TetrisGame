@@ -4,8 +4,7 @@ import tetris.TetrisBlock;
 
 public class IShape extends TetrisBlock {
     public IShape() {
-        // TODO: Add IShape Here
-        super(new int[][] { { 1, 1, 1, 1 } });
+        super(new int[][]{{1, 1, 1, 1}});
     }
 
     @Override
@@ -19,6 +18,6 @@ public class IShape extends TetrisBlock {
             this.setX(this.getX() - 1);
             this.setY(this.getY() + 1);
         }
-
     }
 }
+
